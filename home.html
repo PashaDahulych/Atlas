@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+	<title>Atlas festival</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240520005934">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="mask">
+		<div class="loader">
+			<img src="img/loader.svg" alt="logo">
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a data-popup="#identity" href="#" class="header__button "><span class="_icon-arr-up">Сайт фестивалю</span></a>
+				<a data-popup="#ok" href="#" class="header__button "><span class="_icon-arr-up">Купити квитки 2024</span></a>
+			</div>
+		</header>
+		<main class="page">
+			<section class="festival">
+				<div class="festival__container">
+					<h1 class="hidden">Atlas festival</h1>
+					<form action="#" method="POST" class="festival__form">
+						<a href="#" class="festival__logo"><img src="img/logo.svg" alt="Atlas logo" /></a>
+						<h2 class="festival__title">
+							Форма обміну квитків
+						</h2>
+						<div data-one-select class="festival__body">
+							<div class="festival__line">
+								<label for="qr">Ваш штрихкод</label>
+								<div class="festival__input">
+									<i class="_icon-qr"></i>
+									<input id="qr" type="text" name="form[qr]" data-error="Error" placeholder="Введіть штрих код квитка" autocomplete="off" class="input" />
+								</div>
+							</div>
+							<div class="festival__line">
+								<label for="category">Ваш штрихкод</label>
+								<div class="festival__input">
+									<select id="category" required name="form[]" data-class-modif="category">
+										<option value="" selected>
+											Оберіть категорію вашого старого
+											квитка
+										</option>
+										<option value="Абонемент">
+											Абонемент
+										</option>
+										<option value="Одноденний квиток">
+											Одноденний квиток
+										</option>
+										<option value="Дводенний абонемент">
+											Дводенний абонемент
+										</option>
+										<option value="Триденний абонемент">
+											Триденний абонемент
+										</option>
+									</select>
+								</div>
+							</div>
+							<div class="festival__line">
+								<label for="userName">Ваш ПІБ</label>
+								<div class="festival__input">
+									<i class="_icon-user"></i>
+									<input id="userName" type="text" autocomplete="off" required name="form[userName]" data-error="Error" placeholder="Введіть ПІБ" class="input" />
+								</div>
+							</div>
+							<div class="festival__line">
+								<label for="email">Ваш email</label>
+								<div class="festival__input">
+									<i class="_icon-mail"></i>
+									<input id="email" type="email" autocomplete="off" required name="form[email]" data-error="Error" placeholder="Введіть email" class="input" />
+								</div>
+							</div>
+							<div class="festival__line">
+								<label for="phone">Ваш номер телефону</label>
+								<div class="festival__input">
+									<i class="_icon-phone"></i>
+									<input id="phone" type="tel" autocomplete="off" required name="form[phone]" data-error="Error" placeholder="+380 (__) __-__-___" class="input" />
+								</div>
+							</div>
+							<div class="festival__line">
+								<label for="change">Варіант обміну</label>
+								<div class="festival__input">
+									<select id="change" required name="form[]" data-class-modif="change">
+										<option value="" selected>
+											Оберіть варіант обміну
+										</option>
+										<option value="Одноденний, абонемент на 3 дні">
+											Одноденний, абонемент на 3 дні
+										</option>
+										<option value="Одноденні квитки можна обміняти на одноденний квиток.">
+											Одноденні квитки можна обміняти
+											на одноденний квиток.
+										</option>
+										<option value="Дводенний , триденний та абонемент на абонемент на 3 дні">
+											Дводенний , триденний та
+											абонемент на абонемент на 3 дні
+										</option>
+									</select>
+								</div>
+							</div>
+							<!--  -->
+							<button data-popup="#failed" type="submit" class="festival__button">
+								<span>Обміняти квиток</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="social">
+				<div class="social__container">
+					<h2 class="hidden">Social</h2>
+					<div class="social__wrapper">
+						<div class="social__item">
+							<img src="img/logo.svg" alt="social image" />
+							<a href="https://www.tiktok.com/@atlasfestival" target="_blank" class="social__link tic-tok _icon-arr-up">Tic Tok</a>
+						</div>
+						<div class="social__item">
+							<img src="img/logo.svg" alt="social image" />
+							<a href="https://www.facebook.com/atlas.festival.ua/" target="_blank" class="social__link face _icon-arr-up">Facebook</a>
+						</div>
+						<div class="social__item">
+							<img src="img/logo.svg" alt="social image" />
+							<a href="https://www.youtube.com/@AtlasFestival" target="_blank" class="social__link youtube _icon-arr-up">Youtube</a>
+						</div>
+						<div class="social__item">
+							<img src="img/logo.svg" alt="social image" />
+							<a href="https://www.instagram.com/atlasweekend/" target="_blank" class="social__link inst _icon-arr-up">Instagram</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<p class="footer__right">© 2024 Atlas Festival. Всі права захищені.</p>
+				<p class="footer__link">Розроблено <a lang="en" href="#">Horenko Production</a></p>
+			</div>
+		</footer>
+	</div>
+	<div id="identity" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<form action="#" method="POST" class="popup__form">
+					<h3 class="popup__title">Підтвердження особи</h3>
+					<div class="popup__text">
+						Ми відправили повідомлення з кодом для підтведження на ваш
+						номер телефону <span>+380 **** ****2833</span>
+					</div>
+					<div class="popup__body">
+						<h4 class="popup__sub-title">Код підтвердження</h4>
+						<div class="popup__inputs">
+							<input type="tel" name="number" autocomplete="off" required maxlength="1" />
+							<input type="tel" name="number" autocomplete="off" required maxlength="1" />
+							<input type="tel" name="number" autocomplete="off" required maxlength="1" />
+							<input type="tel" name="number" autocomplete="off" required maxlength="1" />
+							<input type="tel" name="number" autocomplete="off" required maxlength="1" />
+							<input type="tel" name="number" autocomplete="off" required maxlength="1" />
+						</div>
+						<button type="submit" class="popup__button">
+							<span>Підтвердити</span>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="ok" aria-hidden="true" class="popup popup--res">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__form">
+					<div class="popup__check _icon-check"></div>
+					<h3 class="popup__title">Успішний обмін квитків!</h3>
+					<div class="popup__text">
+						Ми відправили повідомлення з новими квитком на вашу
+						електронну адресу
+						<a href="mailto:example@gmail.com">example@gmail.com</a>
+					</div>
+					<a href="#" target="_blank" class="popup__link _icon-arr-up"><span>Перейти</span> на Сайт фестивалю</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="failed" aria-hidden="true" class="popup popup--res">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__form">
+					<div class="popup__failed _icon-failed"></div>
+					<h3 class="popup__title">ПОмилка при обміні</h3>
+					<div class="popup__text">
+						Щось пішло не так... Наш фахівець зв’яжиться з вами найближчим часом. Очікуйте!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/imask?_v=20240513100340"></script>
+	<script src="js/app.min.js?_v=20240520005934"></script>
+</body>
+
+</html>
